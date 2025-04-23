@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+body {
+  background: #fff;
+  padding: 20px;
+  color: #222;
+  font-family: "Inter";
+}
+.bogo-wrapper {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  background-color: #fff;
+}
+.bogo-heading {
+  text-align: center;
+  color: #ff6b82;
+  margin-bottom: 20px;
+  position: relative;
+  font-weight: 600;
+  font-size: 20px;
+}
+.bogo-heading::before,
+.bogo-heading::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 27%;
+  height: 1px;
+  background-color: #c8c8c8;
+}
+.bogo-heading::before {
+  left: 0;
+}
+.bogo-heading::after {
+  right: 0;
+}
+.bogo-card {
+  position: relative;
+  border: 2px solid #c8c8c8;
+  padding: 16px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.card-left {
+  display: flex;
+  align-items: flex-start;
+  flex: 1;
+  gap: 12px;
+}
+.card-radio {
+  width: 18px;
+  height: 18px;
+  margin-top: 4px;
+  accent-color: #ff6b82;
+  cursor: pointer;
+}
+.card-details {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.unit-label {
+ font-family: Inter;
+font-weight: 600;
+font-size: 14px;
+line-height: 100%;
+letter-spacing: 0%;
+}
+.discount-badge {
+  background-color: #ff6b81;
+  color: white;
+  font-size: 12px;
+  padding: 2px 6px;
+}
+.discount-badges{
+  background-color: #ff6b81;
+  color: white;
+  font-size: 12px;
+  padding: 2px 6px;
+  margin-top: -15px;
+  font-weight: 400;
+}
+.price-note {
+  font-size: 12px;
+  color: #000000;
+  font-weight: 400;
+  font-family: Inter;
+}
+.card-right {
+  text-align: right;
+  min-width: 100px;
+}
+.current-price {
+  font-weight: 500;
+  font-size: 18px;
+}
+.old-price {
+  font-size: 14px;
+  color: #aaa;
+  text-decoration: line-through;
+  text-align: left;
+  font-weight: 400;
+}
+.popular-tag {
+  position: absolute;
+  top: -10px;
+  right: 7px;
+  background: #ff6b82;
+  color: white;
+  padding: 4px 12px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 0px 0px 4px 4px;
+  z-index: 1;
+  width: 100px;
+  font-family: Inter;
+}
+.popular-tag::before,
+.popular-tag::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 10px 10px 0;
+  border-color: transparent #d7445b transparent transparent;
+}
+.popular-tag::before {
+  left: -9px;
+  transform: rotate(450deg);
+}
+.popular-tag::after {
+  right: -9px;
+  transform: rotate(540deg);
+}
+.variant-selectors {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.variant-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.variant-row label {
+  font-size: 13px;
+  font-weight: bold;
+}
+.variant-row span {
+     font-size: 11px;
+     font-weight: 400;
+
+}
+.variant-row select {
+  padding: 4px 12px;
+  font-size: 11px;
+  width: 80px;
+  border: 1px solid #D9D9D9;
+  border-radius: 2px;
+}
+.variant-details{
+  display:flex;
+  justify-content: space-around;
+  font-size: 12px;
+}
+.select-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 80px;
+}
+.select-wrapper .select-item{
+  width: 78px;
+}
+.select-wrapper select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 100%;
+  padding-right: 20px;
+  background-color: white;
+  border: 1px solid #D9D9D9;
+  border-radius: 2px;
+  font-size: 11px;
+}
+.select-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 6px;
+  transform: translateY(-50%);
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid #000;
+  pointer-events: none;
+}
+.bottom-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  font-weight: bold;
+  color: #ff6b82;
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.bogo-card.selected {
+  background-color: #ffebef;
+  border-color: #ff6b82;
+  border-width: 2px;
+  border-style: solid;
+  transition: background-color 0.3s ease;
+}
+.total-price{
+  color:#000000;
+  font-family: Inter;
+font-weight: 400;
+line-height: 100%;
+letter-spacing: 0%;
+font-size: 18px;
+}
+.add-to-cart-btn {
+  width: 100%;
+  padding: 12px;
+  background: #ff6b82;
+  color: white;
+   font-family: Inter;
+   border: none;
+  font-size: 14px;
+  margin-top: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.add-to-cart-btn .plus-icon {
+  font-weight: bold;
+  font-size: 16px;
+}
+.add-to-cart-btn .text {
+  font-size: 15px;
+}
+.footer-note {
+  text-align: right;
+  margin-top: 10px;
+  color: #00000066;
+  font-family: Inter;
+font-weight: 400;
+font-style: italic;
+font-size: 12px;
+line-height: 100%;
+letter-spacing: 0%;
+}
+.selected{
+  height: 174px;
+}
+.selected > .card-left > .card-details{
+  gap: 40px;
+}
+.delivery-note{
+  font-size: 18px;
+}
+@media (max-width: 320px) {
+  .variant-selectors {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 0px;
+  }
+  .total-price{
+    color:#000000;
+    font-family: Inter;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0%;
+  font-size: 12px;
+  }
+  .current-price {
+    font-weight: 500;
+    font-size: 12px;
+  }
+}
